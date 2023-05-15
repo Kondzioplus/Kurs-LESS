@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+
+    <!--Style Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!--JS Bootstrap-->
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!--Mobilne menu-->
+    <div class="mobile-menu" id="main-nav-mobile">
+        <a href="" class="mobile-menu-close pull right" id="mobile-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <ul class="main-nav-list-mobile">
+            <li><a href="">Start</a></li>
+            <li><a href="">Opinie</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Sklep</a></li>
+            <li><a href="">Współpraca</a></li>
+            <li><a href="">Kontakt</a></li>
+        </ul>
+    </div>
+    <!--Główny kontener-->
+    <div id="main-container">
+        <!--Nagłówek-->
+        <header class="main-header alt bg">
+            <div class="header-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <!--Logo-->
+                            <div class="logo-wrapper pull-left">
+                                <a href="" class="main-logo">
+                                    <img src="images/logo_main.png" alt=""/>
+                                </a>
+                            </div>
+                            <!--Ikony po prawej-->
+                            <div class="nav-right pull-right">
+                                <ul>
+                                    <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                    <li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+                                </ul>
+                            </div>
+                            <!--Główne MENU-->
+                            <nav class="nav-main pull- right" id="main-nav">
+                                <a href="" class="mobile-nav-button hidden-md hidden-lg">
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                </a>
+                                <ul class="main-nav-list visible-md visible-lg">
+                                    <li><a href="">Start</a></li>
+                                    <li><a href="">Opinie</a></li>
+                                    <li><a href="">Portfolio</a></li>
+                                    <li><a href="">Sklep</a></li>
+                                    <li><a href="">Współpraca</a></li>
+                                    <li><a href="">Kontakt</a></li>
+                                </ul>
+                            </nav>
+                            <!--Clearfix nagłówek-->
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--Odsuwa zawartość od nagłówka-->
+        <div class="top-separator"></div>
+        <div class="clearfix"></div>
+        <!--Górny slider-->
+        <section class="top-slider">
+            <div id="top-slider" class="carousel slide" data-ride="carousel">
+                <!--Kontrolki (3kropki)-->
+                <ol class="carousel-indicators">
+                    <li data-target="#top-slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#top-slider" data-slide-to="1"></li>
+                    <li data-target="#top-slider" data-slide-to="2"></li>
+                  </ol>
+                  <!--Zawartość slidera-->
+                  <div class="carousel-inner" role="listbox">
+                    <!--Slajd-->
+                    <div class="item active">
+                        <div class="slide-image" id="slide1">
+                            <div class="container">
+                                <div class="item-content">
+                                    <h1>Style Less</h1>
+                                    <h3>W pełni responsywny</h3>
+                                    <a class="btn btn-danger" href="">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                        <span>Zobacz więcej</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Slajd-->
+                    <div class="item active">
+                        <div class="slide-image" id="slide2">
+                            <div class="container">
+                                <div class="item-content">
+                                    <h1>Style Less</h1>
+                                    <h3>W pełni responsywny</h3>
+                                    <a class="btn btn-danger" href="">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                        <span>Zobacz więcej</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Slajd-->
+                    <div class="item active">
+                        <div class="slide-image" id="slide3">
+                            <div class="container">
+                                <div class="item-content">
+                                    <h1>Style Less</h1>
+                                    <h3>W pełni responsywny</h3>
+                                    <a class="btn btn-danger" href="">
+                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                        <span>Zobacz więcej</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>
