@@ -2,3 +2,30 @@
 @small: ~'only screen and (min-width: 768px)';
 @medium: ~'only screen and (min-width: 992px)';
 @large: ~'only screen and (min-width: 1400px)';
+
+//bazowe style tekstu
+p , h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+h2 {
+    .center-text
+}
+
+h1 {
+    letter-spacing: -1;
+}
+p {
+    color: @paragraph-color;
+}
+
+//akapit intro
+.intro-text {
+    p {
+        .paragraph(16px);
+        .center-text;
+        color: @text-color;
+    }
+}
+
