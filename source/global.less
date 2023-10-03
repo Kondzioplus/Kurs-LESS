@@ -29,3 +29,29 @@ p {
     }
 }
 
+//białe tło
+.alt-bg {
+    background: @alternate-bg;
+}
+
+//przyciski
+.btn {
+    .upper;
+    font-weight: 700;
+    padding: 12px 20px;
+    font-size: 14px;
+    line-height: 1.4;
+    &:focus {
+        outline: none !important; //nadpisywanie własciwosci przycisku w chwili aktywowania( usuniecie ramki )
+    }
+}
+
+i {
+    .icon(@bright-text-color;22px;22px);
+    margin-right: 10px;
+    .v-align;
+}
+
+span {
+    .v-align;
+}
