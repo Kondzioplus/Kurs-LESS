@@ -119,3 +119,27 @@
 .basic-transition {
     transition: all 0.2s ease-in-out;
 }
+
+//flexbox
+.flex-display {
+    display: flex;
+    display: -ms-flexbox;
+}
+
+.flex-justify {
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+}
+
+.flex-align {
+    align-items: center;
+    -ms-flex-align: center;
+}
+
+//obrazy slider
+.bg-image(@url) {
+    background-image: @url;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
