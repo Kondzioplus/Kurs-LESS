@@ -88,3 +88,53 @@ form {
 :-ms-input-placeholder {
     color: @border-color;
 }
+
+//kolumny bez paddingu
+.no-padding > .row > div[class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+//tytuły sekcji
+.section-title {
+    margin-bottom: 60px;
+}
+
+//linie
+.section-line {
+    font-size: 20px;
+    line-height: 20px;
+    color: @bright-text-color;
+    .clear;
+    .center-text;
+    .v-align;
+    &:before {
+        float: left;
+        .section-line-mix;
+    }
+    &after {
+        float: right;
+        .section-line-mix;
+    }
+}
+
+.section-line-span {
+    margin: 0 3px;
+    i {
+        .icon(@brand-warning;18px;1);
+    }
+}
+
+//separator górny
+.top-separator {
+    height: 110px;
+}
+
+//ramka obrazka
+.image-border {
+    .block;
+    .relative;
+    background: @dark-bg;
+    padding-top: 35px;
+    border-radius: 3px 3px 0 0;
+}
