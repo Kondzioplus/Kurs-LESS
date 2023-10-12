@@ -19,3 +19,15 @@ $(window).bind('scroll', function(event) {
 		$('.main-logo img').css('max-height', 42);
 	}
 });
+
+// Menu mobilne
+function mobileMenu() {
+	$('#mobile-icon').bind('click', function(event) {
+		event.preventDefault();
+		$('#main-nav-mobile').show();
+	});
+	$('#mobile-close').bind('click', function(event) {
+		event.preventDefault();
+		$('#main-nav-mobile').hide();
+	});
+}
