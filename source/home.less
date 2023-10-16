@@ -19,3 +19,39 @@
         margin-bottom: 130px;
     }
 }
+
+// pasek foto
+.photo-bar-single {
+    .center-text;
+    h4 {
+        .basic-transition;
+        .header-mixin(16px;600);
+        margin-bottom: 10px;
+        .upper;
+        cursor: pointer;
+        &:hover {
+            color: @brand-primary;
+        }
+    }
+    h5 {
+        .header-mixin(13px;300);
+        color: @icon-color;
+    }
+    img {
+        .basic-transition;
+        &:hover {
+            opacity: 0.65;
+        }
+    }
+}
+
+.photo-bar-image {
+    margin: 0;
+    background: @dark-bg;
+}
+
+.photo-bar-info {
+    padding: 30px 0 0;
+    min-height: 105px;
+    border-left: 1px solid @border-color lighten(color,7%);
+}
