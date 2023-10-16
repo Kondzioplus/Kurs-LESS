@@ -77,4 +77,24 @@
 // menu mobilne
 .mobile-menu {
     display: none;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background: @dark-bg;
+    padding: 30px 20px 30px;
+}
+
+.mobile-menu-close {
+    transform: translateY(-8px);
+    i {
+        .icon(@bright-text-color;20px);
+        opacity: 0.5;
+        .basic-transition;
+        &:hover {
+            opacity: 1;
+        }
+    }
 }

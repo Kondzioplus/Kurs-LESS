@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="source/style.less" type="text/less"> 
     
     <!--Font Awesome-->
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Fonty google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +38,7 @@
     
     <!--Mobilne menu-->
     <div class="mobile-menu" id="main-nav-mobile">
-        <a href="" class="mobile-menu-close pull right" id="mobile-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <a href="" class="mobile-menu-close pull right" id="mobile-close"><i class="fa fa-times"></i></a>
         <ul class="main-nav-list-mobile">
             <li><a href="">Start</a></li>
             <li><a href="">Opinie</a></li>
@@ -61,21 +61,21 @@
                         <div class="col-xs-12">
                             <!--Logo-->
                             <div class="logo-wrapper pull-left">
-                                <a href="" class="main-logo">
+                                <a href="#" class="main-logo">
                                     <img src="images/logo_main.png" alt="" />
                                 </a>
                             </div>
                             <!--Ikony po prawej-->
                             <div class="nav-right pull-right">
                                 <ul>
-                                    <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                                    <li><a href=""></a><i class="fa-solid fa-cart-shopping"></i></li>
+                                    <li><a href=""><i class="fa fa-search"></i></a></li>
+                                    <li><a href=""></a><i class="fa fa-shopping-cart"></i></li>
                                 </ul>
                             </div>
                             <!--Główne MENU-->
                             <nav class="nav-main pull-right" id="main-nav">
                                 <a class="mobile-nav-button hidden-md hidden-lg" href="" id="mobile-icon">
-                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                    <i class="fa fa-bars" ></i>
                                 </a>
                                 <ul class="main-nav-list visible-md visible-lg">
                                     <li><a href="" class="menu-link-active">Start</a></li>
@@ -100,7 +100,8 @@
         
         <!--Górny slider-->
         <section class="top-slider">
-            <div id="top-slider" class="carousel slide" data-ride="carousel">
+            <div id="top-slider" class="carousel slide" 
+			data-0="transform:translateY(0px);" data-800="transform:translateY(-400px);"></div>
                 <!--Kontrolki (3kropki)-->
                 <ol class="carousel-indicators">
                     <li data-target="#top-slider" data-slide-to="0" class="active"></li>
@@ -108,16 +109,16 @@
                     <li data-target="#top-slider" data-slide-to="2"></li>
                   </ol>
                   <!--Zawartość slidera-->
-                  <div class="carousel-inner" role="listbox">
+                  <div class="carousel-inner">
                     <!--Slajd-->
                     <div class="item active">
                         <div class="slide-image" id="slide1"></div>
                             <div class="container">
-                                <div class="item-content">
+                                <div class="item-content" data-0="transform:translateY(0px);" data-800="transform:translateY(50px);"></div>>
                                     <h1>Style Less</h1>
                                     <h3>W pełni responsywny</h3>
                                     <a class="btn btn-danger" href="">
-                                        <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                                        <i class="fa fa-play-circle-o"></i>
                                         <span>Zobacz więcej</span>
                                     </a>
                                 </div>
@@ -127,7 +128,7 @@
                     <div class="item">
                         <div class="slide-image" id="slide2"></div>
                         <div class="container">
-                                <div class="item-content">
+                                <div class="item-content data-0="transform:translateY(0px); data-800="transform:translateY(50px);">
                                     <h1>Style Less</h1>
                                     <h3>W pełni responsywny</h3>
                                     <a class="btn btn-danger" href="">
@@ -141,7 +142,7 @@
                     <div class="item">
                         <div class="slide-image" id="slide3"></div>
                             <div class="container">
-                                <div class="item-content">
+                                <div class="item-content data-0="transform:translateY(0px); data-800="transform:translateY(50px);">
                                     <h1>Style Less</h1>
                                     <h3>W pełni responsywny</h3>
                                     <a class="btn btn-danger" href="">
@@ -154,12 +155,12 @@
                     </div>
                     <!--Strzałki slaidera-->
                     <a class="left carousel-control" href="#top-slider" role="button" data-slide="prev">
-                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
                         <span class="sr-only">Poprzedni</span>
+						<i class="fa fa-chevron-left"></i>
                       </a>
                       <a class="right carousel-control" href="#top-slider" role="button" data-slide="next">
-                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
                         <span class="sr-only">Nastepny</span>
+						<i class="fa fa-chevron-right"></i>
                       </a>
             </div>
         </section>
@@ -175,7 +176,7 @@
                             <header class="section-title">
                                 <h2>To jest wprowadzenie do treści</h2>
                                 <div class="section-line">
-                                    <span class="section-line-span"><i class="fa fa-circle-o" aria-hidden="true"></i></span>
+                                    <span class="section-line-span"><i class="fa fa-circle-o"></i></span>
                                 </div>
                             </header>
                             <div class="intro-text">
@@ -248,30 +249,30 @@
             <section class="our-services">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-3">
+                        <div class="col-sm-3">
                             <div class="our-services-box">
-                                <span><i class="fa fa-circle-o" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-bell"></i></span>
                                 <h4>Systemy CMS</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro delectus, laboriosam dolor odit maxime assumenda sit corrupti veniam libero magnam impedit ipsum ea facilis in ipsa quas itaque. Quidem, accusamus.</p>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-3">
+                        <div class="col-sm-3">
                             <div class="our-services-box">
-                                <span><i class="fa fa-circle-o" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-desktop"></i></span>
                                 <h4>Systemy CMS</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro delectus, laboriosam dolor odit maxime assumenda sit corrupti veniam libero magnam impedit ipsum ea facilis in ipsa quas itaque. Quidem, accusamus.</p>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-3">
+                        <div class="col-sm-3">
                             <div class="our-services-box">
-                                <span><i class="fa fa-circle-o" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-camera"></i></span>
                                 <h4>Systemy CMS</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro delectus, laboriosam dolor odit maxime assumenda sit corrupti veniam libero magnam impedit ipsum ea facilis in ipsa quas itaque. Quidem, accusamus.</p>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-3">
+                        <div class="col-sm-3">
                             <div class="our-services-box">
-                                <span><i class="fa fa-circle-o" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-desktop"></i></span>
                                 <h4>Systemy CMS</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro delectus, laboriosam dolor odit maxime assumenda sit corrupti veniam libero magnam impedit ipsum ea facilis in ipsa quas itaque. Quidem, accusamus.</p>
                             </div>
@@ -290,7 +291,7 @@
                                 <h3>Kurs Photoshop</h3>
                                 <p>Sed pellentesque nibh libero, sit amet finibus est pulvinar eget. Nullam semper mauris elit, et dictum lectus pellentesque eu. Ut hendrerit urna enim. Cras placerat tortor eu sapien vehicula, luctus ullamcorper eros pharetra.</p>
                                 <a class="btn btn-danger" href="">
-                                    <i class="fa fa-file-video-o" aria-hidden="true"></i>
+                                    <i class="fa fa-file-video-o"></i>
                                     <span>Zobacz więcej</span>
                                 </a>
                             </div>
@@ -298,8 +299,8 @@
                         <!--Kolumna prawa-->
                         <div class="col-xs-12 col-sm-6">
                             <!--responsywne osadzenie 16:9-->
-                            <div class="embed-responsive embed-responsive-16by9">
-                            <iframe width="600" height="337" src="https://www.youtube.com/embed/f33aKjCOeLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <div class="video-content embed-responsive embed-responsive-16by9">
+                            <iframe width="600" height="338" src="https://www.youtube.com/embed/f33aKjCOeLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                         </div>
                     </div>
@@ -313,7 +314,7 @@
                             <header class="section-title">
                                 <h2>To jest wprowadzenie do treści</h2>
                                 <div class="section-line">
-                                    <span class="section-line-span"><i class="fa fa-circle-o" aria-hidden="true"></i></span>
+                                    <span class="section-line-span"><i class="fa fa-circle-o"></i></span>
                                 </div>
                             </header>
                             <div class="intro-text">
@@ -321,14 +322,14 @@
                             </div>
                             <div class="row">
                                 <!--lewa kolumna(offset-0 RESET)-->
-                                <div class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-5 col-md-offset-0">
+                                <div class=" col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-0">
 									<div class="image-border">
 										<img src="images/obraz_zalety.jpg" alt="" class="img-responsive" />
 									</div>
 								</div>
 
                                 <!--prawa kolumna-->
-                                <div class="col-xs-12 col-md-7">
+                                <div class="col-sm-12 col-md-7">
 									<div class="our-adventages-text">
 										<h3>Dlaczego my?</h3>
 										<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod invidunt ut labore et dolore magna aliquyam eratdolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
@@ -340,7 +341,7 @@
 											<li>W pełni responsywny layout</li>
 											<li>Skrypty jQuery</li>
 										</ul>
-										<div class="our-adventages-bottom-row">
+										<div class="adventages-bottom-row">
 											<a class="btn btn-primary" href="">
 						  						<i class="fa fa-play-circle-o"></i>
 						  						<span>Zobacz więcej</span>
@@ -360,8 +361,6 @@
 			<section class="offer alt-bg">
 				<!--kontener-->
                 <div class="container">
-                    <!--klasa wiersza-->
-					<div class="row">
                         <!--tabela bootstrap-->
 						<div class="col-xs-12">
 							<header class="section-title">
@@ -451,7 +450,7 @@
 							</header>
 						</div>
                         <!-- Projekt -->
-						<div class="col-xs-12 col-sm-6 col-md-4 latest-project-single">
+						<div class="latest-project-single col-xs-12 col-sm-6 col-md-4 latest-project-single">
 							<div class="latest-project-inner alt-bg">
 								<div class="latest-project-head">
 									<a href="">
@@ -464,12 +463,12 @@
 								</div>
 								<div class="hor-line"></div>
 								<a href="" class="pull-right read-more"><i class="fa fa-play"></i></a>
-								<a href="" class="comments-link">2 komentarze</a>
+								<a class="comments-link">2 komentarze</a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
 						<!-- Projekt -->
-						<div class="col-xs-12 col-sm-6 col-md-4 latest-project-single">
+						<div class="latest-project-single col-xs-12 col-sm-6 col-md-4 latest-project-single">
 							<div class="latest-project-inner alt-bg">
 								<div class="latest-project-head">
 									<a href="">
@@ -481,13 +480,13 @@
 									<p>Pellentesque efficitur orci magna, non varius diam viverra in. Integer condimentum risus nunc, vitae fringilla ex iaculis varius. I sed ...</p>
 								</div>
 								<div class="hor-line"></div>
-								<a href="" class="pull-right read-more"><i class="fa fa-play"></i></a>
-								<a href="" class="comments-link">2 komentarze</a>
+								<a class="pull-right read-more"><i class="fa fa-play"></i></a>
+								<a class="comments-link">2 komentarze</a>
 								<div class="clearfix"></div>
 							</div>
 						</div>
 						<!-- Projekt -->
-						<div class="col-xs-12 col-sm-6 col-md-4 latest-project-single hidden-xs hidden-sm">
+						<div class="latest-project-single col-xs-12 col-sm-6 col-md-4 latest-project-single hidden-xs hidden-sm">
 							<div class="latest-project-inner alt-bg">
 								<div class="latest-project-head">
 									<a href="">
@@ -548,12 +547,14 @@
 							  	</div>
 							  	<!-- Strzalki -->
 							  	<a class="left carousel-control" href="#promo-slider" role="button" data-slide="prev">
+									<span class="sr-only">Poprzedni</span>
 							    	<i class="fa fa-chevron-left"></i>
-							    	<span class="sr-only">Poprzedni</span>
+							    	
 				  				</a>
 				  				<a class="right carousel-control" href="#promo-slider" role="button" data-slide="next">
+									<span class="sr-only"></span>
 							    	<i class="fa fa-chevron-right"></i>
-							    	<span class="sr-only">Następny</span>
+							    	Następny</span>
 				  				</a>
 							</div>
 						</div>
@@ -580,28 +581,28 @@
 						<div class="col-xs-12">
 							<div class="statistics-content">
 								<div class="statistics-block">
-									<span class="statistics-icon"><i class="fa fa-dropbox"></i></span>
-									<span class="statistics-value timer">1234</span>
+									<span class="statistics-icon"><i class="fa fa-linux"></i></span>
+									<span class="statistics-value timer" data-from="0" data-to="800" data-speed="3000">1234</span>
 									<span class="statistics-text">Filmów</span>
 								</div>
 								<div class="statistics-block">
-									<span class="statistics-icon"><i class="fa fa-dropbox"></i></span>
-									<span class="statistics-value timer">1234</span>
+									<span class="statistics-icon"><i class="fa fa-life-ring"></i></span>
+									<span class="statistics-value timer" data-from="0" data-to="84" data-speed="3000">1234</span>
 									<span class="statistics-text">Filmów</span>
 								</div>
 								<div class="statistics-block">
-									<span class="statistics-icon"><i class="fa fa-dropbox"></i></span>
-									<span class="statistics-value timer">1234</span>
+									<span class="statistics-icon"><i class="fa fa-bell"></i></span>
+									<span class="statistics-value timer" data-from="0" data-to="6" data-speed="3000">1234</span>
 									<span class="statistics-text">Filmów</span>
 								</div>
 								<div class="statistics-block">
-									<span class="statistics-icon"><i class="fa fa-dropbox"></i></span>
-									<span class="statistics-value timer">1234</span>
+									<span class="statistics-icon"><i class="fa fa-linux"></i></span>
+									<span class="statistics-value timer" data-from="0" data-to="45" data-speed="3000">1234</span>
 									<span class="statistics-text">Filmów</span>
 								</div>
 								<div class="statistics-block">
-									<span class="statistics-icon"><i class="fa fa-dropbox"></i></span>
-									<span class="statistics-value timer">1234</span>
+									<span class="statistics-icon"><i class="fa fa-bell"></i></span>
+									<span class="statistics-value timer" data-from="0" data-to="128" data-speed="3000">1234</span>
 									<span class="statistics-text">Filmów</span>
 								</div>
 								<div class="justify-hack"></div>
@@ -626,21 +627,35 @@
 						<div class="col-xs-12 col-sm-6">
 							<div class="form-wrapper">
 								<div class="contact-form">
-									<form action="">
+									<form action="#" method="get">
 										<div class="form-field">
-											<input id="name" placeholder="Imię" />
+											<div class="form-field-inner">
+												<div>
+													<input id="name" placeholder="Imię" />
+												</div>	
+											</div>
 										</div>
 										<div class="form-field">
-											<input id="email" placeholder="Email" />
+											<div class="form-field-inner">
+												<div>
+													<input id="email" placeholder="Email" />
+												</div>	
+											</div>
 										</div>
 										<div class="form-field">
-											<input id="subj" placeholder="Temat" />
+											<div class="form-field-inner">
+												<div>
+													<input id="subj" placeholder="Temat" />
+												</div>	
+											</div>
 										</div>
 										<div class="form-field">
-											<textarea id="msg" placeholder="Wiadomość" rows="10" cols="30"></textarea>
+											<div class="form-field-inner">
+												<textarea id="msg" placeholder="Wiadomość" rows="10" cols="30"></textarea>
+											</div>
 										</div>
 										<button class="btn btn-primary">Wyślij</button>
-									</form>
+									</form> 
 								</div>
 							</div>
 						</div>
@@ -671,12 +686,12 @@
 								<h4>O nas</h4>
 								<p>In hac habitasse platea habitasse platea dictumst. Duis consequat augue dui, non cursusuat augue dui, non c justo commodo sed.</p>
 								<ul class="footer-social">
-									<li><a href=""><i class="fa fa-dropbox"></i></a></li>
-									<li><a href=""><i class="fa fa-dropbox"></i></a></li>
-									<li><a href=""><i class="fa fa-dropbox"></i></a></li>
-									<li><a href=""><i class="fa fa-dropbox"></i></a></li>
-									<li><a href=""><i class="fa fa-dropbox"></i></a></li>
-									<li><a href=""><i class="fa fa-dropbox"></i></a></li>
+									<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+									<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+									<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
 								</ul>
 							</div>
                             <!-- Nasz Blog -->
@@ -706,11 +721,11 @@
                             <div class="col-xs-12 col-sm-2 our-links">
 								<h4>Linki</h4>
 								<ul>
-									<li><a href="">Strefa Kursów</a></li>
-									<li><a href="">Google</a></li>
-									<li><a href="">Facebook</a></li>
-									<li><a href="">Twitter</a></li>
-									<li><a href="">Inne</a></li>
+									<li><a href="#">Strefa Kursów</a></li>
+									<li><a href="#">Google</a></li>
+									<li><a href="#">Facebook</a></li>
+									<li><a href="#">Twitter</a></li>
+									<li><a href="#">Inne</a></li>
 								</ul>
 							</div>
                             <!-- Galeria -->
@@ -722,6 +737,8 @@
                                     <li><a href=""><img src="images/footer/2.jpg" alt="" /></a></li>
                                     <li><a href=""><img src="images/footer/3.jpg" alt="" /></a></li>
                                     <li><a href=""><img src="images/footer/4.jpg" alt="" /></a></li>
+									<li><a href=""><img src="images/footer/1.jpg" alt="" /></a></li>
+									<li><a href=""><img src="images/footer/1.jpg" alt="" /></a></li>
                                 </ul>
                                 </div>
 							</div>
@@ -733,7 +750,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12 copyright-content">
-                                <p>Copyright 2023</p>
+                                <p>Copyright 2015 © StrefaKursów.pl</p>
                             </div>
                         </div>
                     </div>
@@ -741,8 +758,7 @@
 			</footer>
             
         </div>        
-    </div>
-  <script>localStorage.clear</script>  
+    </div>  
 </body>
 
 </html>

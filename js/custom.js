@@ -9,6 +9,15 @@ $(document).ready(function(){
     });
 });
 
+/* Odliczanie */
+$('.timer').countTo();
+
+/* Scroll dla slidera */
+var s = skrollr.init({forceHeight: false});
+
+/* Menu mobilne */
+mobileMenu();
+
 // Scroll dla naglowka
 $(window).bind('scroll', function(event) {
 	if($(window).scrollTop() > 20) {
@@ -22,11 +31,11 @@ $(window).bind('scroll', function(event) {
 
 // Menu mobilne
 function mobileMenu() {
-	$('#mobile-icon').bind('click', function(event) {
+	$('#mobile-icon').on('click', function(event) {
 		event.preventDefault();
 		$('#main-nav-mobile').show();
 	});
-	$('#mobile-close').bind('click', function(event) {
+	$('#mobile-close').on('click', function(event) {
 		event.preventDefault();
 		$('#main-nav-mobile').hide();
 	});
