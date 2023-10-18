@@ -9,7 +9,7 @@ $(document).ready(function(){
     });
 });
 
-/* Odliczanie */
+/* Odliczanie statystyki */
 $('.timer').countTo();
 
 /* Scroll dla slidera */
