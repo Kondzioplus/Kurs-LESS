@@ -299,3 +299,35 @@
         }
     }
 }
+
+.latest-projects-content {
+    font-size: 14px;
+}
+
+.hor-line {
+    margin: 0 -25px 25px;
+    height: 1px;
+    .block;
+    background: lighten(@border-color,6%);
+}
+
+.comments-link {
+    color: @paragraph-color;
+    text-decoration: none;
+    line-height: 30px;
+    .basic-transition;
+    &:hover {
+        color: @brand-primary;
+        text-decoration: none;
+    }
+}
+
+.read-more {
+    line-height: 30px;
+    font-size: 24px;
+    color: @border-color;
+    .basic-transition;
+    &:hover {
+        color: @brand-primary;
+    }
+}
