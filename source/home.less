@@ -53,5 +53,23 @@
 .photo-bar-info {
     padding: 30px 0 0;
     min-height: 105px;
-    border-left: 1px solid @border-color lighten(color,7%);
+    border-left: 1px solid @border-color lighten(@border-color,7%);
+}
+
+// sekcja nasze uslugi
+.our-services {
+    .padding-top-bottom(100px;90px);
+}
+
+.our-services-box {
+    .center-text;
+    h4 {
+        .header-mixin(18px;600);
+        .upper;
+    }
+    span {
+        .basic-border(2px;solid;@icon-color);
+        .icon-span-round(88px);
+        margin-bottom: 30px;
+    }
 }
