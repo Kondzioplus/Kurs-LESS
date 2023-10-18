@@ -120,4 +120,32 @@
         margin-left: 40px;
         margin-right: 90px;
     }
+    h2, h3 {
+        color: @bright-text-color;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+        .upper;
+    }
+    h2 {
+        .header-mixin(36px;700);
+        border-top: 3px solid @bright-text-color;
+        border-bottom: 3px solid @bright-text-color;
+    }
+    h3 {
+        .header-mixin(32px;300);
+    }
+    p {
+        font-size: 12px;
+        color: @bright-text-color;
+    }
+    a {
+        margin-top: 20px;
+        text-transform: none;
+    }
+}
+
+.video-content {
+    margin-top: 40px;
+    @media @small {
+        margin-top: 0;
+    }
 }
