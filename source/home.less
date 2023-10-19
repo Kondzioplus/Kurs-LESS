@@ -423,7 +423,40 @@
 
 .statistics-block {
     .inline-block;
+    margin: 0 15px 25px;
+    .center-text;
 }
+
+.statistics-icon {
+    .inline-block;
+    margin-bottom: 9px;
+    font-size: 26px;
+    color: @bright-text-color;
+}
+
+.statistics-value {
+    height: 40px;
+    font-size: 40px;
+    line-height: 40px;
+    .block;
+    margin-top: 20px;
+    color: @brand-primary;
+    @media @small {
+        height: 80px;
+        font-size: 80px;
+        line-height: 80px;
+    }
+}
+
+.statistics-text {
+    font-size: 15px;
+    line-height: 1.4;
+    .block;
+    .upper;
+    margin-top: 20px;
+    opacity: 0.4;
+}
+
 // fałszywa linia(wyrównanie zawartości)
 .justify-hack {
     width: 100%;
