@@ -404,3 +404,30 @@
         }
     }
 }
+
+// statystyki
+.statistics {
+    .padding-top-bottom(90px;50px);
+    .bg-image(url('../images/stats_back.jpg'));
+    @media @medium {
+        .padding-top-bottom(120px;110px);
+    }
+}
+
+.statistics-content {
+    .center-text;
+    @media @medium {
+        text-align: justify;
+    }
+}
+
+.statistics-block {
+    .inline-block;
+}
+// fałszywa linia(wyrównanie zawartości)
+.justify-hack {
+    width: 100%;
+    .inline-block;
+    line-height: 0;
+    font-size: 0;
+}
