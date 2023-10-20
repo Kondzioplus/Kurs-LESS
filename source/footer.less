@@ -47,3 +47,24 @@ footer {
         }
     }
 }
+
+// nasz blog i linki
+.our-blog, .our-links {
+    li {
+        border-top: 1px solid @footer-border-color;
+        &:first-child {
+            border-top: none;
+        }
+        a {
+            .inline-block;
+            .padding-top-bottom(10px;10px);
+            line-height: 1.5;
+        }
+    }
+}
+
+.our-blog {
+    .footer-col-container {
+        margin-right: 20px;
+    }
+}
