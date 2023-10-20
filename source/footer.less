@@ -25,3 +25,25 @@ footer {
         }
     }
 }
+
+// o nas
+.footer-social {
+    li {
+        .inline-block;
+        margin-right: 6px;
+        margin-bottom: 3px;
+        a {
+            .basic-transition;
+            .center-text;
+            .inline-block;
+            .square(30px);
+            text-decoration: none;
+            &:hover > {
+                color: lighten(@footer-text-color,20%);
+            }
+            i {
+                .icon(@footer-text-color;16px;28);
+            }
+        }
+    }
+}
