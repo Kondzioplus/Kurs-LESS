@@ -8,6 +8,10 @@ footer {
     .container {
         padding-top: 80px;
         margin-bottom: 40px;
+        // wyrażenie class*="col-" oznacza wprowadzenie zmian dla wszystkich kolum.
+        div[class*="col-"] {
+            margin-bottom: 10px;
+        }
         h4 {
             .header-mixin(14px;700);
             margin-bottom: 25px;
@@ -91,4 +95,19 @@ footer {
             }
         }
     }
+}
+
+// sekcja copyright
+.copyright {
+    background: @copyright-bg;
+    .upper;
+    .center-text;
+    font-size: 11px;
+    @media @small {
+        text-align: left;
+    }
+}
+
+.copyright-content {
+    .padding-top-bottom(30px;10px);
 }
