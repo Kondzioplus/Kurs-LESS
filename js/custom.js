@@ -13,7 +13,8 @@ $(document).ready(function(){
 	// Odliczanie statystyki
 	$('.timer').countTo();
 	// scrollr
-	var s = skrollr.init();
+	var s = skrollr.init({forceHeight: false});
+	
 });
 
 // Scroll dla naglowka
