@@ -146,3 +146,11 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+// hover dla przycisków
+.button-variant(@color; @background; @border) {
+    &:hover {
+        background-color: darken(@background, 5%);
+        border-color: transparent;
+    }
+}
