@@ -36,6 +36,9 @@
 	 <!-- skrypt jquery z odliczaniem -->
 	 <script src="js/jquery.countTo.js"></script>
 
+	 <!-- Scrollr -->
+	 <script src="js/skrollr.min.js"></script>
+
 </head>
 <body>
     
@@ -64,7 +67,7 @@
                         <div class="col-xs-12">
                             <!--Logo-->
                             <div class="logo-wrapper pull-left">
-                                <a href="#" class="main-logo">
+                                <a href="" class="main-logo">
                                     <img src="images/logo_main.png" alt="" />
                                 </a>
                             </div>
@@ -112,7 +115,7 @@
                     <li data-target="#top-slider" data-slide-to="2"></li>
                   </ol>
                   <!--Zawartość slidera-->
-                  <div class="carousel-inner">
+                  <div class="carousel-inner" role="listbox">
                     <!--Slajd-->
                     <div class="item active">
                         <div class="slide-image" id="slide1"></div>
@@ -252,28 +255,28 @@
             <section class="our-services">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-3">
+                        <div class="col-xs-12 col-sm-3">
                             <div class="our-services-box">
                                 <span><i class="fa fa-bell"></i></span>
                                 <h4>Systemy CMS</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro delectus, laboriosam dolor odit maxime assumenda sit corrupti veniam libero magnam impedit ipsum ea facilis in ipsa quas itaque. Quidem, accusamus.</p>
                             </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-xs-12 col-sm-3">
                             <div class="our-services-box">
                                 <span><i class="fa fa-desktop"></i></span>
                                 <h4>Systemy CMS</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro delectus, laboriosam dolor odit maxime assumenda sit corrupti veniam libero magnam impedit ipsum ea facilis in ipsa quas itaque. Quidem, accusamus.</p>
                             </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-xs-12 col-sm-3">
                             <div class="our-services-box">
                                 <span><i class="fa fa-camera"></i></span>
                                 <h4>Systemy CMS</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro delectus, laboriosam dolor odit maxime assumenda sit corrupti veniam libero magnam impedit ipsum ea facilis in ipsa quas itaque. Quidem, accusamus.</p>
                             </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-xs-12 col-sm-3">
                             <div class="our-services-box">
                                 <span><i class="fa fa-desktop"></i></span>
                                 <h4>Systemy CMS</h4>
@@ -302,7 +305,7 @@
                         <!--Kolumna prawa-->
                         <div class="col-xs-12 col-sm-6">
                             <!--responsywne osadzenie 16:9-->
-                            <div class="video-content embed-responsive embed-responsive-16by9 video-content">
+                            <div class="embed-responsive embed-responsive-16by9 video-content">
                             <iframe width="600" height="338" src="https://www.youtube.com/embed/f33aKjCOeLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                         </div>
@@ -325,14 +328,14 @@
                             </div>
                             <div class="row">
                                 <!--lewa kolumna(offset-0 RESET)-->
-                                <div class=" col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-0">
+                                <div class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-5 col-md-offset-0">
 									<div class="image-border">
 										<img src="images/obraz_zalety.jpg" alt="" class="img-responsive" />
 									</div>
 								</div>
 
                                 <!--prawa kolumna-->
-                                <div class="col-sm-12 col-md-7">
+                                <div class="col-xs-12 col-md-7">
 									<div class="our-adventages-text">
 										<h3>Dlaczego my?</h3>
 										<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod invidunt ut labore et dolore magna aliquyam eratdolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
@@ -364,6 +367,7 @@
 			<section class="offer alt-bg">
 				<!--kontener-->
                 <div class="container">
+					<div class="row">
                         <!--tabela bootstrap-->
 						<div class="col-xs-12">
 							<header class="section-title">
@@ -471,7 +475,7 @@
 							</div>
 						</div>
 						<!-- Projekt -->
-						<div class="latest-project-single col-xs-12 col-sm-6 col-md-4 latest-project-single">
+						<div class="col-xs-12 col-sm-6 col-md-4 latest-project-single">
 							<div class="latest-project-inner alt-bg">
 								<div class="latest-project-head">
 									<a href="">
@@ -489,7 +493,7 @@
 							</div>
 						</div>
 						<!-- Projekt -->
-						<div class="latest-project-single col-xs-12 col-sm-6 col-md-4 latest-project-single hidden-xs hidden-sm">
+						<div class="col-xs-12 col-sm-6 col-md-4 latest-project-single hidden-xs hidden-sm">
 							<div class="latest-project-inner alt-bg">
 								<div class="latest-project-head">
 									<a href="">
@@ -550,18 +554,20 @@
 							  	</div>
 							  	<!-- Strzalki -->
 							  	<a class="left carousel-control" href="#promo-slider" role="button" data-slide="prev">
+									<i class="fa fa-chevron-left"></i>
 									<span class="sr-only">Poprzedni</span>
-							    	<i class="fa fa-chevron-left"></i>
+							    	
 							    	
 				  				</a>
 				  				<a class="right carousel-control" href="#promo-slider" role="button" data-slide="next">
+									<i class="fa fa-chevron-right"></i>
 									<span class="sr-only"></span>
-							    	<i class="fa fa-chevron-right"></i>
+							    	
 							    	Następny</span>
 				  				</a>
 							</div>
 						</div>
-                        <div class="clearfix visible-xs"></div>
+                        
                         <!-- Pasek Logo -->
 						<div class="col-xs-12">
 							<div class="promo-logos">
@@ -585,7 +591,7 @@
 							<div class="statistics-content">
 								<div class="statistics-block">
 									<span class="statistics-icon"><i class="fa fa-linux"></i></span>
-									<span class="statistics-value timer" data-from="0" data-to="800" data-speed="3000"></span>
+									<span class="statistics-value timer" data-from="0" data-to="123" data-speed="3000"></span>
 									<span class="statistics-text">Filmów</span>
 								</div>
 								<div class="statistics-block">
@@ -622,43 +628,29 @@
 						<!-- Mapy -->
 						<div class="col-xs-12 col-sm-6">
                             <div class="maps-wrapper embed-responsive embed-responsive-4by3">
-                            <iframe class="embed-responsive-item" width="600" height="450" frameborder="0" style="border:0"load="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=Radom%2C%20Polska&key=AIzaSyB3atUYRb_nL0d8-qiPxdYrTCf0dnf-FJI"></iframe>
-                        </div>
+                            	<iframe class="embed-responsive-item" width="600" height="450" frameborder="0" style="border:0"load="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=Radom%2C%20Polska&key=AIzaSyB3atUYRb_nL0d8-qiPxdYrTCf0dnf-FJI"></iframe>
+                        	</div>
 						</div>
 						
                         <!-- Formularz -->
 						<div class="col-xs-12 col-sm-6">
 							<div class="form-wrapper">
 								<div class="contact-form">
-									<form action="#" method="get">
+									<form action="">
 										<div class="form-field">
-											<div class="form-field-inner">
-												<div>
-													<input id="name" placeholder="Imię" />
-												</div>	
-											</div>
+											<input id="name" placeholder="Imię" />
 										</div>
 										<div class="form-field">
-											<div class="form-field-inner">
-												<div>
-													<input id="email" placeholder="Email" />
-												</div>	
-											</div>
+											<input id="email" placeholder="Email" />
 										</div>
 										<div class="form-field">
-											<div class="form-field-inner">
-												<div>
-													<input id="subj" placeholder="Temat" />
-												</div>	
-											</div>
+											<input id="subj" placeholder="Temat" />
 										</div>
 										<div class="form-field">
-											<div class="form-field-inner">
-												<textarea id="msg" placeholder="Wiadomość" rows="10" cols="30"></textarea>
-											</div>
+											<textarea id="msg" placeholder="Wiadomość" rows="10" cols="30"></textarea>
 										</div>
 										<button class="btn btn-primary">Wyślij</button>
-									</form> 
+									</form>
 								</div>
 							</div>
 						</div>
@@ -734,17 +726,17 @@
                             <!-- Galeria -->
 							<div class="col-xs-12 col-sm-4 our-gallery">
                                 <div class="footer-col-container">
-                                    <h4>Linki</h4>
-                                <ul>
-                                    <li><a href=""><img src="images/footer/1.jpg" alt="" /></a></li>
-                                    <li><a href=""><img src="images/footer/2.jpg" alt="" /></a></li>
-                                    <li><a href=""><img src="images/footer/3.jpg" alt="" /></a></li>
-                                    <li><a href=""><img src="images/footer/4.jpg" alt="" /></a></li>
-									<li><a href=""><img src="images/footer/1.jpg" alt="" /></a></li>
-									<li><a href=""><img src="images/footer/1.jpg" alt="" /></a></li>
-									<li><a href=""><img src="images/footer/1.jpg" alt="" /></a></li>
-									<li><a href=""><img src="images/footer/1.jpg" alt="" /></a></li>
-                                </ul>
+                                    <h4>Galeria</h4>
+                                	<ul>
+                                    	<li><a href="#"><img src="images/footer/1.jpg" alt="" /></a></li>
+                                    	<li><a href="#"><img src="images/footer/2.jpg" alt="" /></a></li>
+                                    	<li><a href="#"><img src="images/footer/3.jpg" alt="" /></a></li>
+                                    	<li><a href="#"><img src="images/footer/4.jpg" alt="" /></a></li>
+										<li><a href="#"><img src="images/footer/1.jpg" alt="" /></a></li>
+										<li><a href="#"><img src="images/footer/1.jpg" alt="" /></a></li>
+										<li><a href="#"><img src="images/footer/1.jpg" alt="" /></a></li>
+										<li><a href="#"><img src="images/footer/1.jpg" alt=""></a></li>
+                                	</ul>
                                 </div>
 							</div>
 						</div>
@@ -762,8 +754,12 @@
                 </div>
 			</footer>
             
-        </div>        
-    </div>  
+        </div>
+
+    </div>
+<script>
+localStorage.clear();
+</script>  
 </body>
 
 </html>
