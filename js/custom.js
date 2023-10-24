@@ -12,6 +12,10 @@ $(document).ready(function(){
 	mobileMenu();
 	// Odliczanie statystyki
 	$('.timer').countTo();
+	// logo dla małych urządzeń
+	if (document.documentElement.clientWidth < 480) {
+		$('.main-logo').html('<img src="../images/logo_small.png" alt="" />');
+	}
 	
 });
 
