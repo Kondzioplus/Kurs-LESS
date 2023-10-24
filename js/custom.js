@@ -12,10 +12,6 @@ $(document).ready(function(){
 	mobileMenu();
 	// Odliczanie statystyki
 	$('.timer').countTo();
-	// scrollr
-	var s = skrollr.init({
-		forceHeight: false
-	});
 	
 });
 

@@ -37,7 +37,13 @@
 	 <script src="js/jquery.countTo.js"></script>
 
 	 <!-- Scrollr -->
-	 <script src="js/skrollr.min.js"></script>
+	 <script>
+		if (document.documentElement.clientWidth > 1200) {
+			$.getScript("js/skrollr.min.js", function() {
+				var s = skrollr.init({forceHeight: false});
+			})
+		}
+	 </script>
 
 </head>
 <body>
