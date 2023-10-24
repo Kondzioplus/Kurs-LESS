@@ -13,7 +13,9 @@ $(document).ready(function(){
 	// Odliczanie statystyki
 	$('.timer').countTo();
 	// scrollr
-	var s = skrollr.init({forceHeight: false});
+	var s = skrollr.init({
+		forceHeight: false
+	});
 	
 });
 
