@@ -39,6 +39,7 @@
     }
     img {
         .basic-transition;
+        -webkit-backface-visibility: hidden;
         &:hover {
             opacity: 0.65;
         }
@@ -90,6 +91,7 @@
                 transition: transform 0.3s; opacity: 0.3s;
             }
         }
+
     }
     &:hover span {
         border: transparent;
@@ -281,23 +283,23 @@
     }
 }
 
-.latest-projects-head {
-    margin: -25px -25px 25px;
-    a {
-        .relative;
-        .block;
-        overflow: hidden;
-        border-radius: 3px 3px 0 0;
-        &:hover img {
-            opacity: 0.8;
-            transform: scale(1);
-        }
-        img {
-            opacity: 1;
-            transform: scale(1.07);
-            transition: opacity 0.3s, transform 0.3s;
-        }
-    }
+.latest-project-head {
+	margin: -25px -25px 25px;
+	a {
+		.relative;
+		.block;
+		overflow: hidden;
+		border-radius: 3px 3px 0 0;
+		&:hover img {
+			opacity: 0.8;
+			transform: scale(1);
+		}
+		img {
+			opacity: 1;
+			transform: scale(1.07);
+			transition: opacity 0.3s, transform 0.3s;
+		}
+	}
 }
 
 .latest-projects-content {
