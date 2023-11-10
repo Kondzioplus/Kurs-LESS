@@ -257,42 +257,36 @@
     }
 }
 
-// najnowsze projekty
+// Najnowsze projekty
 .latest-projects {
-    .padding-top-bottom(50px;0);
-    .container {
-        width: 100%;
-        padding-left: 50px;
-        position: relative;
-    }
-    @media @small {
-        .padding-top-bottom(100px;100px);
-    }
+	.padding-top-bottom(50px;0);
+	@media @small {
+		.padding-top-bottom(100px;100px);
+	}
 }
 
-.latest-projects-inner {
-    .shadow(0 1px 0 rgba(0, 0, 0, 0.1));
-    padding: 25px;
-    border-radius: 3px;
-    h3 {
-        letter-spacing: 0.5;
-        margin-bottom: 25px;
-        font-weight: 600;
-        a {
-            color: @text-color;
-            text-decoration: none;
-            .basic-transition;
-            &:hover {
-                color: @brand-primary;
-            }
-        }
-    }
+.latest-project-inner {
+	.shadow(0 1px 0 rgba(0, 0, 0, 0.1));
+	padding: 25px;
+	border-radius: 3px;
+	h3 {
+		letter-spacing: 0.5;
+		margin-bottom: 25px;
+		font-weight: 600;
+		a {
+			color: @text-color;
+			text-decoration: none;
+			.basic-transition;
+			&:hover {
+				color: @brand-primary;
+			}
+		}
+	}
 }
 
 .latest-project-head {
 	margin: -25px -25px 25px;
 	a {
-        padding-left: 50px;
 		.relative;
 		.block;
 		overflow: hidden;
@@ -309,36 +303,36 @@
 	}
 }
 
-.latest-projects-content {
-    font-size: 14px;
+.latest-project-content {
+	font-size: 14px;
 }
 
 .hor-line {
-    margin: 0 -25px 25px;
-    height: 1px;
-    .block;
-    background: lighten(@border-color, 6%);
+	margin: 0 -25px 25px;
+	height: 1px;
+	.block;
+	background: lighten(@border-color, 6%);
 }
 
 .comments-link {
-    color: @paragraph-color;
-    text-decoration: none;
-    line-height: 30px;
-    .basic-transition;
-    &:hover {
-        color: @brand-primary;
-        text-decoration: none;
-    }
+	color: @paragraph-color;
+	text-decoration: none;
+	line-height: 30px;
+	.basic-transition;
+	&:hover {
+		color: @brand-primary;
+		text-decoration: none;
+	}
 }
 
 .read-more {
-    line-height: 30px;
-    font-size: 24px;
-    color: @border-color;
-    .basic-transition;
-    &:hover {
-        color: @brand-primary;
-    }
+	line-height: 30px;
+	font-size: 24px;
+	color: @border-color;
+	.basic-transition;
+	&:hover {
+		color: @brand-primary;
+	}
 }
 
 // sekcja promo
