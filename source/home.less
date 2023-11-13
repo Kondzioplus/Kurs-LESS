@@ -76,6 +76,8 @@
         i {
             .relative;
             .icon(@icon-color;32px;88px);
+            width: 50%;
+            margin: 0 auto;
             &:after {
                 .square(88px);
                 content: " ";
@@ -86,13 +88,12 @@
                 opacity: 0;
                 position: absolute;
                 z-index: -1;
-                top: -2%;
-                left: -80%;
+                left: -50%;
                 transform: scale(0);
                 transition: transform 0.3s; opacity: 0.3s;
             }
         }
-
+/*usuniecie obramowania w momencie najechania kursorem*/
     }
     &:hover span {
         border: transparent;
